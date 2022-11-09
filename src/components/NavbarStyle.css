@@ -1,3 +1,44 @@
+/* NAVBAR */
+
+#navbarScroll {
+    padding: 0;
+    display: fixed;
+}
+.container-fluid {
+    background-color: #451773;
+    display: fixed;
+    padding-top: 0px;
+    border-top: 0px;
+    padding: 10px;
+    z-index: 10;
+}
+
+#navbarScrollingDropdown {
+    color: white;
+}
+
 .btnSearch {
-    color: red;
+    color: rgb(255, 255, 255);
+}
+
+.Title {
+    color: rgb(255, 255, 255);
+}
+
+
+.inicio, .hamburguesas, .contactanos, .carritoLogo{
+    color: white;
+}
+
+.contactanos {
+    color: white;
+}
+
+
+/* CARRITO LOGO */
+
+.carritoLogo {
+    display: inline;
+    width: 100px;
+    margin: 0px 320px 0px 0px;
 }
