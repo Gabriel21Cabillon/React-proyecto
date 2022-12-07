@@ -6,16 +6,16 @@ const productos = [
     {
       id:"1",
       name:"keyboard",
-      descrption:"Keyboard description",
+      descrption:"Patricia description",
       stock: 5,
-      img:"https://m.media-amazon.com/images/I/61vjNMgYGLL._AC_SX425_.jpg"
+      img:"https://http2.mlstatic.com/D_NQ_NP_666117-MLU31243774272_062019-O.webp"
     },
     {
       id:"2",
       name:"mouse",
-      descrption:"Mouse description",
+      descrption:"Corona description",
       stock: 6,
-      img: "https://diginet.com.uy/wp-content/uploads/2022/03/61UxfXTUyvL._AC_SL1500_.jpg"
+      img: "https://www.distribuidorabebidas.com.uy/wp-content/uploads/sites/31/2018/01/cerveza_corana_botella_710-510x425.jpg"
     }
   ];
 
