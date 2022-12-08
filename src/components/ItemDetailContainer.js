@@ -3,7 +3,7 @@ import ItemDetail from "./ItemDetail";
 
 const itemMock = {
   id: "1",
-  name: "Producto",
+  name: "Stella Artois",
   description: "Descripcion del producto",
   price: 600,
   photo: "../img/stella.webp",
