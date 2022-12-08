@@ -37,7 +37,7 @@ const productos = [
     }
   
     return (
-      <div className="h-full">
+      <div className="">
         <ItemList products={products} />
       </div>
     );
