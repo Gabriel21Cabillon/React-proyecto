@@ -2,27 +2,27 @@ import { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
 
 const itemMock = {
-    id: "1",
-    name: "Producto",
-    description: "Descripcion del producto",
-    price: 15000,
-    photo: "dawawdkanwdnawda",
+  id: "1",
+  name: "Producto",
+  description: "Descripcion del producto",
+  price: 600,
+  photo: "../img/stella.webp",
 };
 
 const ItemDetailContainer = () => {
-    const [item, setItem] = useState(null);
+  const [item, setItem] = useState(null);
 
-    useEffect(() => {
-        new Promise((resolve) => setTimeout(() => resolve(itemMock), 2000))
-        .then((data) => setItem(data));
+  useEffect(() => {
+    new Promise((resolve) => setTimeout(() => resolve(itemMock), 2000)).then(
+      (data) => setItem(data)
+    );
+  }, []);
 
-    }, []);
+  if (!item) {
+    return <p>Loading...</p>;
+  }
 
-    if (!item) {
-        return <p>Loading...</p>;
-    }
-
-    return <ItemDetail item={item} />;
+  return <ItemDetail item={item} />;
 };
 
 export default ItemDetailContainer;

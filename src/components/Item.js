@@ -1,10 +1,10 @@
-const Item = ({producto}) => {
-    return (
-        <div>
-        <img src={producto.img} className="w-20 h-20" />
-        <li>{producto.name}</li>
-      </div>
-    );
+const Item = ({ product }) => {
+  return (
+    <div>
+      <img src={product.img} className="w-20 h-20" alt="Product" />
+      <li>{product.name}</li>
+    </div>
+  );
 };
 
 export default Item;

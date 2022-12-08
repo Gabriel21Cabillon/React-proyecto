@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       <main>
         <Navbar/>
+        <ItemListContainer />
         <ItemDetailContainer/>
-        <ItemListContainer greeting={"Hola Mundo"} />
       </main>
         {/* <Footer/> */}
     </div>
