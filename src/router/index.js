@@ -1,20 +1,25 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import App from "../App"
+import Cart from "../components/CartWidget";
 import Category from "../views/category";
 import Item from "../views/item";
 
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <App />
+        element: <App />,
+    },
+    {
+        path: "/cart",
+        element: <Cart />,
     },
     {
         path: "/category/:category",
         element: <Category />,
     },
     {
-        path: "/item/:category",
+        path: "/item/:id",
         element: <Item />,
     },
-])
+]);

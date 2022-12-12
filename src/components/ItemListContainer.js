@@ -1,24 +1,37 @@
-import React, { useEffect } from 'react';
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useParams } from "react-router-dom";
+
+// Own components
 import ItemList from './ItemList';
+import { Loading } from './Loading';
 
 
 // mock
 import{ item } from "../mocks/item.mock";
 
 const ItemListContainer = () => {
+  const { category } = useParams();
   const [products, setProducts] = useState([]);
 
-    useEffect(() => {
-      new Promise((resolve) =>
+  useEffect(() => {
+    new Promise((resolve) =>
       setTimeout(() => {
         resolve(item);
-      }, 3000)
-    ).then((data) => setProducts(data));
-    }, []);
+      }, 2000)
+    ).then((data) => {
+      if (category) {
+        const categories = data.filter(
+          (product) => product.category === category
+        );
+        setProducts(categories);
+      } else {
+        setProducts(data);
+      }
+    });
+  }, [category]);
     
     if (products.length === 0) {
-      return <p>Loading...</p>;
+      return <Loading />;
     }
   
     return (

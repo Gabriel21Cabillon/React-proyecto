@@ -24,14 +24,14 @@ function Navbarr({greeting}) {
               INICIO
               </Link>
               <Link
-                to="/Cerveza"
+                to="category/cerveza"
                   className="cerveza px-3 py-2"
                   aria-current="page"
               >
               Cerveza
               </Link>
               <Link
-                to="/Vino"
+                to="category/vino"
                   className="vino px-3 py-2"
                   aria-current="page"
               >

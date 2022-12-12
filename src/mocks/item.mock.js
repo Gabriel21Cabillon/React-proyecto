@@ -3,7 +3,7 @@ export const item = [
     {
       id:"1",
       name:"Patricia",
-      category: "Cerveza",
+      category: "cerveza",
       descrption:"Patricia description",
       stock: 5,
       price:140,
@@ -12,7 +12,7 @@ export const item = [
     {
       id:"1",
       name:"Patricia",
-      category: "Cerveza",
+      category: "cerveza",
       descrption:"Patricia description",
       stock: 5,
       price:140,
@@ -21,7 +21,7 @@ export const item = [
     {
       id:"1",
       name:"Patricia",
-      category: "Cerveza",
+      category: "cerveza",
       descrption:"Patricia description",
       stock: 5,
       price:140,
@@ -32,7 +32,7 @@ export const item = [
     {
       id:"2",
       name:"Vino tinto",
-      category: "Vino",
+      category: "vino",
       descrption:"Vino description",
       stock: 6,
       price:160,
@@ -41,7 +41,7 @@ export const item = [
     {
       id:"2",
       name:"Vino tinto",
-      category: "Vino",
+      category: "vino",
       descrption:"Vino description",
       stock: 6,
       price:160,
@@ -50,7 +50,7 @@ export const item = [
     {
       id:"2",
       name:"Vino tinto",
-      category: "Vino",
+      category: "vino",
       descrption:"Vino description",
       stock: 6,
       price:160,
