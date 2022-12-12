@@ -2,18 +2,16 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import  './components/NavbarStyle.css';
 import ItemListContainer from './components/ItemListContainer';
-import Navbar from './components/Navbarr';
-import Footer from './components/Footer';
 import ItemDetailContainer from './components/ItemDetailContainer';
+import { Layout } from './components/Layout';
 
 function App() {
   return (
     <div className="App">
-      <main>
-        <Navbar/>
+      <Layout>
         <ItemListContainer />
         <ItemDetailContainer/>
-      </main>
+      </Layout>
         {/* <Footer/> */}
     </div>
   );

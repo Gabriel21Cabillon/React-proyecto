@@ -2,6 +2,7 @@ import React, { } from 'react';
 import {Navbar,Container,Nav,NavDropdown,Form,FormControl,Button} from 'react-bootstrap';
 import './NavbarStyle.css'
 import CartWidget from './CartWidget';
+import {Link} from "react-router-dom"
 
 
 function Navbarr({greeting}) {
@@ -13,16 +14,40 @@ function Navbarr({greeting}) {
             <Navbar.Brand className="Title" href="#">TRAPPIN BAR</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
+
+
+              <Link
+                to="/"
+                  className="inicio px-3 py-2"
+                  aria-current="page"
+              >
+              INICIO
+              </Link>
+              <Link
+                to="/Cerveza"
+                  className="cerveza px-3 py-2"
+                  aria-current="page"
+              >
+              Cerveza
+              </Link>
+              <Link
+                to="/Vino"
+                  className="vino px-3 py-2"
+                  aria-current="page"
+              >
+              Vino
+              </Link>
+
+
+
               <Nav className=" navPrincipal me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }}
                 navbarScroll>
-                <Nav.Link className="inicio" href="#action1">INICIO</Nav.Link>
-                <Nav.Link className="hamburguesas" href="#action2">HAMBURGUESAS</Nav.Link>
-                <NavDropdown title="BEBIDAS" id="navbarScrollingDropdown">
-                  <NavDropdown.Item href="#action3">Alcoholicas</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">Refrescos</NavDropdown.Item>
+                {/* <NavDropdown title="BEBIDAS" id="navbarScrollingDropdown">
+                  <NavDropdown.Item href="#action3">Cerveza</NavDropdown.Item>
+                  <NavDropdown.Item href="#action4">Vino</NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action5">Tragos</NavDropdown.Item>
-                </NavDropdown>
+                </NavDropdown> */}
                 <Nav.Link className="contactanos" href="#">Contactanos!</Nav.Link>
               </Nav>
               <CartWidget className="carritoLogo" />
